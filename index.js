@@ -61,65 +61,96 @@
 
 
 
-5 > 4 // true
-"ананас" > "яблоко"  // false
-"2" > "12"  // true
-undefined == null  // true
-undefined === null  // false
-null == "\n0\n"  // false
-null === +"\n0\n"  // false
+// 5 > 4 // true
+// "ананас" > "яблоко"  // false
+// "2" > "12"  // true
+// undefined == null  // true
+// undefined === null  // false
+// null == "\n0\n"  // false
+// null === +"\n0\n"  // false
 
 
 
-if ("0") {
-    alert( 'Привет' );
-  } // да
+// if ("0") {
+//     alert( 'Привет' );
+//   }; // да
 
 
-let value = prompt('Какое "официальное" название JavaScript?', '');
+// let value = prompt('Какое "официальное" название JavaScript?');
 
-if (value == 'ECMAScript') {
-    alert('Верно!');
-} else {
-    alert('Не знаете? ECMAScript!');
-    }
+// if (value == 'ECMAScript') {
+//     alert('Верно!');
+// } else {
+//     alert('Не знаете? ECMAScript!');
+//     };
 
 
 
-let value = prompt('Число', 0);
+// let value = prompt('Число');
 
-if (value > 0) {
-  alert( 1 );
-} else if (value < 0) {
-  alert( -1 );
-} else {
-  alert( 0 );
+// if (value > 0) {
+//   alert( 1 );
+// } else if (value < 0) {
+//   alert( -1 );
+// } else {
+//   alert( 0 );
+// }
+
+
+
+// let result = (a + b < 4) ? 'Мало' : 'Много';
+
+
+
+// let message = 
+// (login == 'Сотрудник') ? 'Привет' :
+// (login == 'Директор') ? 'Здравствуйте' :
+// (login == '') ? 'Нет логина' :
+// '';
+
+
+
+// alert( null || 2 || undefined );  //2
+
+
+// alert( alert(1) || 2 || alert(3) );  //2
+
+
+// alert( 1 && null && 2 );  //null
+
+
+// alert( alert(1) && alert(2) );  //unfined
+
+
+// alert( null || 2 && 3 || 4 );  //3
+
+// let age;
+// if (age >= 14 && age <= 90);
+
+
+// let age;
+// if (!(age >= 14 && age <= 90));
+
+
+
+let login = prompt("Кто там?");
+
+if (login == 'Админ') {
+  let password = prompt('Пароль?');
+  if (password == 'Я главный') {
+    alert( 'Здравствуйте!' );
+  } 
+  else if (password == '' || password == null) {
+    alert( 'Отменено' );
+  } 
+  else {
+    alert( 'Неверный пароль' );
+  }
+} 
+else if (login == '' || login == null) {
+  alert( 'Отменено' );
+} 
+else {
+  alert( "Я вас не знаю" );
 }
-
-
-
-let result = (a + b < 4) ? 'Мало' : 'Много';
-
-
-
-let message = 
-(login == 'Сотрудник') ? 'Привет' :
-(login == 'Директор') ? 'Здравствуйте' :
-(login == '') ? 'Нет логина' :
-'';
-
-
-
-alert( null || 2 || undefined );  //2
-
-
-alert( alert(1) || 2 || alert(3) );  //
-
-
-alert( 1 && null && 2 );  //
-
-
-alert( alert(1) && alert(2) );  //
-
-
 
